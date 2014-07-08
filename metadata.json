@@ -1,0 +1,14 @@
+{
+  "name": "alup-rbenv",
+  "version": "1.2.1",
+  "author": "alup",
+  "summary": "rbenv Ruby Version Manager module",
+  "license": "MIT",
+  "source": "UNKNOWN",
+  "project_page": "https://github.com/alup/puppet-rbenv",
+  "issues_url": "https://github.com/alup/puppet-rbenv/issues",
+  "description": "Puppet module for rbenv Ruby Version Manager",
+  "dependencies": [
+  
+  ]
+}

@@ -3,6 +3,26 @@
 [![Build Status](https://secure.travis-ci.org/alup/puppet-rbenv.png?branch=master)](http://travis-ci.org/alup/puppet-rbenv)
 [![endorse](http://api.coderwall.com/alup/endorsecount.png)](http://coderwall.com/alup)
 
+**Warning!**
+
+This fork have next changes since v1.2.0 of upstream:
+ 1. Merged PR [alup/puppet-rbenv#95](https://github.com/alup/puppet-rbenv/pull/95) (allows to install patched rubies, thanks to @gsamokovarov )
+ 2. Bumped version to 1.2.1
+ 3. Removed Modulefile according to [official module update manual](http://docs.puppetlabs.com/puppet/latest/reference/modules_publishing.html#modulefile-no-metadatajson)
+
+Installation:
+
+    git clone git@github.com:Envek/puppet-rbenv.git # Clone it to your workstation
+    gem install puppet
+    cd puppet-rbenv
+    puppet module build .                           # Build it
+
+After that you will get a file named `alup-rbenv-1.2.1.tar.gz`, upload it to your Puppet master and install with:
+
+    puppet module install /path/to/alup-rbenv-1.2.1.tar.gz --force
+
+Don't forget to relaunch Puppet master (it loves to cache ruby code of modules).
+
 ## About
 
 This project provides powerful manifests for the installation of
